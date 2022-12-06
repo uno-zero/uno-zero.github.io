@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>http://localhost:4000/posts/2022-02-06-nmap</loc>
+    <image:image>
+      <image:loc>http://localhost:4000/assets/img/posts/1nmap.jpg</image:loc>
+      <image:title>Entendamos a Nmap</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tabs/about.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tabs/archive.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tabs/blog/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tabs/links.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tabs/projects.html</loc>
+  </url>
+</urlset>
+

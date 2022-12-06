@@ -1,0 +1,16 @@
+[
+    {
+    "title"     : "Entendamos a Nmap"
+    ,"title_sub": "Nmap for Pentester Escaneando toda la red nmap –sP 192.168.1.0/24 //Enviamos paquetes por ARP a toda la red nmap -sn 192.168.1.0/24 –packet-trace // Vemos paquetes..."
+    ,"category" : "hacking"
+    ,"tags"     : "hacking, pentest, red team, bug bounty"
+    ,"url"      : "/posts/2022-02-06-nmap"
+    ,"image"    : "/assets/img/posts/1nmap.jpg"
+    ,"max_width": ""
+    ,"display"  : ""
+    ,"read_time": "1 min read"
+    ,"date"     : "Dec 5, 2022"
+    ,"year"     : "2022"
+    }
+  ]
+
