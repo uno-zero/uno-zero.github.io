@@ -74,7 +74,7 @@ nmap --source-port 53 -p 5555 10.11.1.111
     # If work, set IPTABLES to bind this port
     iptables -t nat -A POSTROUTING -d 10.11.1.111 -p tcp -j SNAT --to :53
 
-# escaneo por UDP
+# Escaneo por UDP
 nmap 10.11.1.111 -sU
 nmap -sU -F -Pn -v -d -sC -sV --open --reason -T5 10.11.1.111
 
