@@ -1,0 +1,213 @@
+# you can move this content to front matter of [language]/tabs/projects.md
+###########################################################
+#                Projects Page Data
+###########################################################
+page_data:
+  main:
+    header: "Proyectos personales"
+    info: "."
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    img: ":c.jpg"
+    back_color: "lightblue"
+
+  category:
+    - title: "Hacking"
+      type: id_hacking
+      color: "#150050"
+
+    - title: "Bash"
+      type: id_bash
+      color: "#3F0071"
+
+    - title: "Python"
+      type: id_python
+      color: "#FB2576"
+
+  list:
+    # example
+    - type: id_python
+      project_name: "Markdown"
+      project_excerpt: "Examples"
+      img: ":neo.jpeg"
+      img_title: "img title1"
+      date: "2021-03-13"
+      post: |
+        # Examples
+
+        This is an example page to display markdown related styles for Mr. Green Jekyll Theme.
+
+        ### Headings (centered)
+        {:data-align="center"}
+
+        # Heading 1
+
+        ## Heading 2
+
+        ### Heading 3
+
+        #### Heading 4
+
+        ##### Heading 5Example Project 4444
+
+        ###### Heading 6
+
+        ***
+
+        ### Paragraphs
+
+        #### Paragraph
+
+        **William Shakespeare**, Let me not to the marriage of true minds
+        Admit impediments. Love is not love
+        Which alters when it alteration finds,
+        Or bends with the remover to remove.
+        O no, it is an ever-fixed mark
+        That looks on tempests and is never shaken;
+        It is the star to every wand'ring barque,
+        Whose worth's unknown, although his height be taken.
+        Love's not Time's fool, though rosy lips and cheeks
+        Within his bending sickle's compass come;
+        Love alters not with his brief hours and weeks,
+        But bears it out even to the edge of doom.
+        If this be error and upon me proved,
+        I never writ, nor no man ever loved.
+
+        #### Texts
+
+        Quoted text `Hello world`
+
+        Bold text **Hello world**
+
+        Italic text _Hello world_
+
+        kbd text <kbd>Hello world</kbd>
+
+        #### Blockquote
+
+        > **William Shakespeare**, Let me not to the marriage of true minds
+        Admit impediments. Love is not love
+        Which alters when it alteration finds,
+        Or bends with the remover to remove.
+        O no, it is an ever-fixed mark
+        That looks on tempests and is never shaken;
+        It is the star to every wand'ring barque,
+        Whose worth's unknown, although his height be taken.
+        Love's not Time's fool, though rosy lips and cheeks
+        Within his bending sickle's compass come;
+        Love alters not with his brief hours and weeks,
+        But bears it out even to the edge of doom.
+        If this be error and upon me proved,
+        I never writ, nor no man ever loved.
+
+        ### Link
+
+        This is [Mr. Green Jekyll Theme](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme), a simple theme built for [Jekyll](https://jekyllrb.com/).
+
+        ### Picture
+
+        ![such a lovely place](:projects-heading.jpg)
+
+        ### Picture (centered)
+
+        ![such a lovely place](:project1_thumb.jpg){:data-align="center"}
+
+        ### Lists
+
+        - Apple
+        - Banana
+        - Orange
+
+        1. Fruits
+            1. Apples
+                - Granny Smith
+                - Mutsu
+            1. Bananas
+                - Cavendish
+                - Red
+        1. Vegetables
+
+        ***
+
+        ### Tables
+
+        #### Small Table (centered)
+
+        | Fruits(not aligned) | Alignment (centered) | num (right align) |
+        | ------------------- | :------------------: | ----------------: |
+        | Apple               |       centered       |              9999 |
+        | Banana              |  centered long text  |               999 |
+        | Orange              |       centered       |                99 |
+        | Lemon               |       centered       |                 9 |
+        {:data-align="center"}
+
+        #### Wide Table (centered)
+
+        scroll enabled when page is narrow
+
+        | Fruits | num (left align) | num (right align) | num  | num  | num  |
+        | ------ | :--------------- | ----------------: | ---- | ---- | ---- |
+        | Apple  | 1111             |              1111 | 2222 | 3333 | 4444 |
+        | Banana | 111              |               111 | 222  | 333  | 444  |
+        | Orange | 11               |                11 | 22   | 33   | 44   |
+        | Lemon  | 1                |                 1 | 2    | 3    | 4    |
+        {:data-align="center"}
+
+        #### Wider Table
+
+        scroll enabled when page is narrow
+
+        | Fruits | num (left align) | num (right align) | num  | num  | num  | num  | num  | num  |
+        | ------ | :--------------- | ----------------: | ---- | ---- | ---- | ---- | ---- | ---- |
+        | Apple  | 1111             |              1111 | 2222 | 3333 | 4444 | 5555 | 6666 | 7777 |
+        | Banana | 111              |               111 | 222  | 333  | 444  | 555  | 666  | 777  |
+        | Orange | 11               |                11 | 22   | 33   | 44   | 55   | 66   | 77   |
+        | Lemon  | 1                |                 1 | 2    | 3    | 4    | 5    | 6    | 7    |
+
+        ### Code
+
+        #### Quote
+
+        ```python[enlace en línea](http://www.limni.net)	nge(5, 10):
+          print(i)
+        ```
+
+    # picture
+    - type: id_bash
+      project_name: "Menu de bash"
+      project_excerpt: "Bash"
+      img: ":neo.jpeg"
+      img_title: "uno@xord:~$ bash"
+      date: "2022-12-06"
+      post: |
+        ## uno@xord:~$ Bash
+
+        ![Image](:comp.jpg)
+
+
+
+    # hacking
+    - type: id_hacking
+      project_name: "Cazador de links"
+      project_excerpt: "Hacking"
+      img: ":h.jpg"
+      img_title: "hunter"
+      date: "2022-12-06"
+      post: |
+        ## uno@xord:~$ hunt3r01.sh
+        ###### Este script tiene la finalidad de cazar urls con el dominio selecionado (v.1). [Visitar](https://github.com/uno-zero/Hunt3r)	
+        ![Image](:h1.png)
+
+    # hacking
+    - type: id_hacking
+      project_name: "Subdomain takeover"
+      project_excerpt: "Hacking"
+      img: ":h.jpg"
+      img_title: "hunter"
+      date: "2022-12-06"
+      post: |
+        ## uno@xord:~$ ./Overscan.sh
+        ###### Busca subdominios con vulnerabilidad takeover y lista subdominios(v.1). [Visitar](https://github.com/uno-zero/takscan)	
+        ![Image](:h3.png)
+
+   

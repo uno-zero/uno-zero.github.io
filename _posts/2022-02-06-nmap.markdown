@@ -1,0 +1,92 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: id_What_is_this
+title: "Entendamos a Nmap"
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+author: uno-zero
+# multiple category is not supported
+category: Hacking
+# multiple tag entries are possible
+tags: [Hacking, Pentest, Red Team, Bug bounty]
+# thumbnail image for post
+img: ":1nmap.jpg"
+# disable comments on this pageWelcome to Jekyll!
+#comments_disable: true
+
+# publish date
+date: 2022-12-06 10:04:30 +0900
+
+# seo
+# if not specified, date will be used.
+#meta_modify_date: 2022-01-01 10:04:30 +0900
+# check the meta_common_description in _data/owner/[language].yml
+#meta_description: ""
+
+# optional
+# if you enabled image_viewer_posts you don't need to enable this. This is only if image_viewer_posts = false
+#image_viewer_on: true
+# if you enabled image_lazy_loader_posts you don't need to enable this. This is only if image_lazy_loader_posts = false
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+<!-- outline-start -->
+
+# Nmap for Pentester
+
+## Escaneando toda la red
+
+###### nmap –sP 192.168.1.0/24  //Enviamos paquetes por ARP a toda la red
+
+###### nmap -sn 192.168.1.0/24 --packet-trace // Vemos paquetes por ARP
+
+###### nmap -sn 192.168.1.108 --disable-arp-ping // Paquetes dentro de ARP no visibles
+
+###### Es lo mismo al paso anterior nmap –sn 192.168.1.108 --packet-trace --send-ip
+
+
+# Escaneo muy simple pero rapido
+nmap 10.11.1.111
+
+# Nmap ultra rapido
+nmap 10.11.1.111 --max-retries 1 --min-rate 1000
+
+# Obtenemos puertos abiertos
+nmap -p - -Pn -n 10.10.10.10
+
+# Escaneamos puertos especificos
+nmap -pXX,XX,XX,XX,XX -Pn -sV -n 10.10.10.10
+
+# Completo rápido y preciso
+nmap --top-ports 200 -sV -n --max-retries 2 -Pn --open -iL ips.txt -oA portscan_active
+
+# Escaneo lento completo con reporte de salida
+nmap -v -A -p- -Pn --script vuln -oA full 10.11.1.111
+
+# Evasión de filtrado de red
+nmap --source-port 53 -p 5555 10.11.1.111
+    # If work, set IPTABLES to bind this port
+    iptables -t nat -A POSTROUTING -d 10.11.1.111 -p tcp -j SNAT --to :53
+
+# escaneo por UDP
+nmap 10.11.1.111 -sU
+nmap -sU -F -Pn -v -d -sC -sV --open --reason -T5 10.11.1.111
+
+# Evación de firewal
+nmap -f <IP>
+nmap --mtu 24 <IP>
+nmap --data-length 30 <IP>
+nmap --source-port 53 <IP>
+
+# Indicaciones de velocidad de nmap
+--max-rtt-timeout: Time response per probe
+--script-timeout: Time response per script
+--host-timeout: Time response for host
+--open: Avoid detection if filtered or closed
+--min-rate
