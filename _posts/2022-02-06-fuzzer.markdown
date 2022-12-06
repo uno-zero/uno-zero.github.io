@@ -36,15 +36,9 @@ date: 2022-12-06 10:04:30 +0900
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
-
-<!-- outline-start -->
-
 # Fuzzer
-
 ## Un web fuzzer es un tipo de herramienta que permite probar qué rutas están activas y cuáles no en un sitio web.
-
 # Ejemplo:
-
 ###### wfuzz	https://github.com/xmendez/wfuzz	                    wfuzz -w onelistforall --hc 404 -c -t XX -u https://ffuf.io.fi/FUZZ
 
 ###### ffuf	https://github.com/ffuf/ffuf	                        ffuf -c -t XX -w onelistforall -u https://ffuf.io.fi/FUZZ
