@@ -1,0 +1,52 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: id_What_is_this
+title: "¿Qué es un web fuzzer?"
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+author: uno-zero
+# multiple category is not supported
+category: Hacking
+# multiple tag entries are possible
+tags: [Hacking, Pentest, Red Team, Bug bounty]
+# thumbnail image for post
+img: ":wfuzz1.png"
+# disable comments on this pageWelcome to Jekyll!
+#comments_disable: true
+
+# publish date
+date: 2022-12-06 10:04:30 +0900
+
+# seo
+# if not specified, date will be used.
+#meta_modify_date: 2022-01-01 10:04:30 +0900
+# check the meta_common_description in _data/owner/[language].yml
+#meta_description: ""
+
+# optional
+# if you enabled image_viewer_posts you don't need to enable this. This is only if image_viewer_posts = false
+#image_viewer_on: true
+# if you enabled image_lazy_loader_posts you don't need to enable this. This is only if image_lazy_loader_posts = false
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+
+<!-- outline-start -->
+
+# Fuzzer
+
+## Un web fuzzer es un tipo de herramienta que permite probar qué rutas están activas y cuáles no en un sitio web.
+
+wfuzz	https://github.com/xmendez/wfuzz	                    wfuzz -w onelistforall --hc 404 -c -t XX -u https://ffuf.io.fi/FUZZ
+ffuf	https://github.com/ffuf/ffuf	                        ffuf -c -t XX -w onelistforall -u https://ffuf.io.fi/FUZZ
+feroxbuster	https://github.com/epi052/feroxbuster	          feroxbuster -u https://ffuf.io.fi/ -w onelistforall -t XX -n
+gobuster	https://github.com/OJ/gobuster	                  gobuster dir -u https://ffuf.io.fi/ -w onelistforall -t XX
+rustbuster	https://github.com/phra/rustbuster	            rustbuster dir -t XX --url https://ffuf.io.fi/ --wordlist onelistforall
+dirsearch	https://github.com/maurosoria/dirsearch	          dirsearch.py -u https://ffuf.io.fi/ -w onelistforall -t XX -r
+
