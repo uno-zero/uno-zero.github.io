@@ -136,10 +136,10 @@ home:
   new_posts_show_more_button: Ver más ...
 
 # for archives layout
-#archives:
-#  title: Archive
-#  button_name: Archivos
-#  page_header: Archive
+archives:
+  title: Archive
+  button_name: Archivos
+  page_header: Archive
 
 # for about layout
 about:
