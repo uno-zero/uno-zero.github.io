@@ -40,19 +40,25 @@ date: 2022-12-06 10:04:30 +0900
 
 # Fuzzer
 
-## Un web fuzzer es un tipo de herramienta que permite probar qué rutas están activas y cuáles no en un sitio web.
-```
+#### Un web fuzzer es un tipo de herramienta que permite probar qué rutas están activas y cuáles no en un sitio web.
+
 # Ejemplo:
+```
+ - wfuzz	https://github.com/xmendez/wfuzz	                    
+   wfuzz -w onelistforall --hc 404 -c -t XX -u https://ffuf.io.fi/FUZZ
 
- - wfuzz	https://github.com/xmendez/wfuzz	                    wfuzz -w onelistforall --hc 404 -c -t XX -u https://ffuf.io.fi/FUZZ
+ - ffuf	https://github.com/ffuf/ffuf	                        
+   ffuf -c -t XX -w onelistforall -u https://ffuf.io.fi/FUZZ
 
- - ffuf	https://github.com/ffuf/ffuf	                        ffuf -c -t XX -w onelistforall -u https://ffuf.io.fi/FUZZ
+ - feroxbuster	https://github.com/epi052/feroxbuster	          
+   feroxbuster -u https://ffuf.io.fi/ -w onelistforall -t XX -n
 
- - feroxbuster	https://github.com/epi052/feroxbuster	          feroxbuster -u https://ffuf.io.fi/ -w onelistforall -t XX -n
+ - gobuster	https://github.com/OJ/gobuster	                  
+   gobuster dir -u https://ffuf.io.fi/ -w onelistforall -t XX
 
- - gobuster	https://github.com/OJ/gobuster	                  gobuster dir -u https://ffuf.io.fi/ -w onelistforall -t XX
+ - rustbuster	https://github.com/phra/rustbuster	            
+   rustbuster dir -t XX --url https://ffuf.io.fi/ --wordlist onelistforall
 
- - rustbuster	https://github.com/phra/rustbuster	            rustbuster dir -t XX --url https://ffuf.io.fi/ --wordlist onelistforall
-
- - dirsearch	https://github.com/maurosoria/dirsearch	          dirsearch.py -u https://ffuf.io.fi/ -w onelistforall -t XX -r
+ - dirsearch	https://github.com/maurosoria/dirsearch	          
+   dirsearch.py -u https://ffuf.io.fi/ -w onelistforall -t XX -r
 ```
