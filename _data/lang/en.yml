@@ -136,10 +136,10 @@ home:
   new_posts_show_more_button: Ver más ...
 
 # for archives layout
-archives:
-  title: Archive
-  button_name: Archivos
-  page_header: Archive
+#archives:
+#  title: Archive
+#  button_name: Archivos
+#  page_header: Archive
 
 # for about layout
 about:
@@ -148,11 +148,11 @@ about:
   email_title: email
 
 # for links layout
-#links:
-#  title: Links
-#  button_name: Links
-#  link_text: Web site
-#  info_text: Info
+links:
+  title: Links
+  button_name: Links
+  link_text: Web site
+  info_text: Info
 
 # for projects layout
 projects:
