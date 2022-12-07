@@ -148,11 +148,11 @@ about:
   email_title: email
 
 # for links layout
-links:
-  title: Links
-  button_name: Links
-  link_text: Web site
-  info_text: Info
+#links:
+#  title: Links
+#  button_name: Links
+#  link_text: Web site
+#  info_text: Info
 
 # for projects layout
 projects:
