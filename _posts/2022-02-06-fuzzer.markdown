@@ -37,7 +37,7 @@ date: 2022-12-06 10:04:30 +0900
 #published: false
 ---
 <!-- outline-start -->
-
+```
 # Fuzzer
 
 ## Un web fuzzer es un tipo de herramienta que permite probar qué rutas están activas y cuáles no en un sitio web.
@@ -55,4 +55,4 @@ date: 2022-12-06 10:04:30 +0900
  rustbuster	https://github.com/phra/rustbuster	            rustbuster dir -t XX --url https://ffuf.io.fi/ --wordlist onelistforall
 
  dirsearch	https://github.com/maurosoria/dirsearch	          dirsearch.py -u https://ffuf.io.fi/ -w onelistforall -t XX -r
-
+```
